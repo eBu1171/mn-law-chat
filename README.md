@@ -1,3 +1,5 @@
+<img width="1950" height="675" alt="dashboard_search_speed" src="https://github.com/user-attachments/assets/bd857ea2-4ed0-4d21-93fe-ce9aee9870fd" />
+<img width="2100" height="900" alt="dashboard_scorecard" src="https://github.com/user-attachments/assets/44c271fe-2d2f-4a50-92fe-041d792eabc4" />
 # Хуулийн туслах (mn-law-chat)
 
 **Live:** https://mn-law-chat.vercel.app
