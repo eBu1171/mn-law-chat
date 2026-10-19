@@ -1,0 +1,72 @@
+/* Tokens follow design.md: neutral greys, translucent borders and hovers, one restrained accent */
+:root {
+  --bg: #fcfcfc;
+  --surface: #ffffff;
+  --surface-2: #f3f3f3;
+  --text: #0d0d0d;
+  --text-2: #5d5d5d;
+  --text-3: #8f8f8f;
+  --border: #0000001a;
+  --border-light: #0000000d;
+  --hover: #0000000d;
+  --bubble: #0d0d0d0d;
+  --send: #0d0d0d;
+  --send-ink: #ffffff;
+  --link: #2c67c5;
+  --scrim: #00000080;
+  --tip: #0d0d0d;
+  --tip-ink: #ffffff;
+  --composer-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.04),
+    0 4px 80px 8px rgba(0, 0, 0, 0.024);
+  color-scheme: light;
+  font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --surface: #1b1b1b;
+    --surface-2: #212121;
+    --text: #ededed;
+    --text-2: #cdcdcd;
+    --text-3: #afafaf;
+    --border: #ffffff26;
+    --border-light: #ffffff0d;
+    --hover: #ffffff1a;
+    --bubble: #ededed14;
+    --send: #ededed;
+    --send-ink: #0d0d0d;
+    --link: #6e9ef0;
+    --tip: #ffffff;
+    --tip-ink: #0d0d0d;
+    --composer-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #000000;
+  --surface: #1b1b1b;
+  --surface-2: #212121;
+  --text: #ededed;
+  --text-2: #cdcdcd;
+  --text-3: #afafaf;
+  --border: #ffffff26;
+  --border-light: #ffffff0d;
+  --hover: #ffffff1a;
+  --bubble: #ededed14;
+  --send: #ededed;
+  --send-ink: #0d0d0d;
+  --link: #6e9ef0;
+  --tip: #ffffff;
+  --tip-ink: #0d0d0d;
+  --composer-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
